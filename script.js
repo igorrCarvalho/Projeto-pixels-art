@@ -6,5 +6,12 @@ function createPixels() {
         pixelBoard.appendChild(pixel);
     }
 }
-
 createPixels();
+
+function firstColor() {
+    const black = document.querySelector('.color');
+    black.style.backgroundColor = 'black';
+    black.className = 'color selected';
+}
+
+firstColor();
