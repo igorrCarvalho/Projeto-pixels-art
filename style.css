@@ -25,3 +25,20 @@
 #purple {
     background-color: purple;
 }
+
+#pixel-board {
+  margin-top: 15px;
+  width: 210px;
+  height: 210px;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pixel {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+}
