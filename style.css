@@ -1,0 +1,27 @@
+#color-palette {
+  margin: 1px solid black;
+}
+
+.color {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid black;
+    width: 50px;
+    display: inline-block;
+}
+
+#black {
+  background-color: black;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#red {
+    background-color: red;
+}
+
+#purple {
+    background-color: purple;
+}
