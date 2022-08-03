@@ -1,8 +1,27 @@
 window.onload = function() {
     const black = document.querySelector('.color');
-    black.classList.add('black')
-    black.classList.add('selected')
+    black.classList.add('black');
+    black.style.backgroundColor = 'black';
+    black.classList.add('selected');
+    const divColor2 = document.querySelectorAll('.color')[1];
+    const divColor3 = document.querySelectorAll('.color')[2];
+    const divColor4 = document.querySelectorAll('.color')[3];
     
+    divColor2.style.backgroundColor = generateColor();
+    divColor3.style.backgroundColor = generateColor();
+    divColor4.style.backgroundColor = generateColor(); 
+
+    function generateColor() {
+        const letters = '0123456789ABCDEF';
+        let generatedColor = '#';
+        for (let index = 0; index < 6; index += 1) {
+            generatedColor += letters[Math.floor(Math.random() * 16)]
+        }
+
+        return generatedColor;
+    }
+    
+
     function createPixels() {
         let pixelBoard = document.querySelector('#pixel-board');
         for (let index = 0; index < 25; index += 1) {
@@ -29,8 +48,8 @@ window.onload = function() {
         const bigPixel = document.querySelector('#pixel-board');
         bigPixel.addEventListener('click', function(pixel) {
             let colorSelected = document.querySelector('.selected')
-            let color = colorSelected.classList[1];
-            pixel.target.id = color;
+            let color = colorSelected.style.backgroundColor;
+            pixel.target.style.backgroundColor = color;
         })
     }
     applyColor();
@@ -39,11 +58,12 @@ window.onload = function() {
     button.addEventListener('click', function() {
         const allPixels = document.querySelectorAll('.pixel');
         for (let index = 0; index < allPixels.length; index += 1) {
-            allPixels[index].removeAttribute('id');
+            allPixels[index].style.backgroundColor = 'white';
         }
     })
 
     let btn = document.querySelector('#generate-board');
+
     btn.addEventListener('click', function () {
         const boardNum = document.querySelector('#board-size');
         let boardSize = boardNum.value;
@@ -80,5 +100,3 @@ window.onload = function() {
         }
     })
 }
-
-
