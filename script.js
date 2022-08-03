@@ -1,27 +1,27 @@
-window.onload = function() {
-    const black = document.querySelector('.color');
-    black.classList.add('black');
-    black.style.backgroundColor = 'black';
-    black.classList.add('selected');
-    const divColor2 = document.querySelectorAll('.color')[1];
-    const divColor3 = document.querySelectorAll('.color')[2];
-    const divColor4 = document.querySelectorAll('.color')[3];
-    
-    divColor2.style.backgroundColor = generateColor();
-    divColor3.style.backgroundColor = generateColor();
-    divColor4.style.backgroundColor = generateColor(); 
-
-    function generateColor() {
-        const letters = '0123456789ABCDEF';
-        let generatedColor = '#';
-        for (let index = 0; index < 6; index += 1) {
-            generatedColor += letters[Math.floor(Math.random() * 16)]
+window.onload = function () {
+  const black = document.querySelector('.color');
+  black.classList.add('black');
+  black.style.backgroundColor = 'black';
+  black.classList.add('selected');
+  const divColor2 = document.querySelectorAll('.color')[1];
+  const divColor3 = document.querySelectorAll('.color')[2];
+  const divColor4 = document.querySelectorAll('.color')[3];
+  
+  function generateColor() {
+      const letters = '0123456789ABCDEF';
+      let generatedColor = '#';
+      for (let index = 0; index < 6; index += 1) {
+          generatedColor += letters[Math.floor(Math.random() * 16)]
         }
-
+        
         return generatedColor;
     }
-    
 
+  divColor2.style.backgroundColor = generateColor();
+  divColor3.style.backgroundColor = generateColor();
+  divColor4.style.backgroundColor = generateColor(); 
+    
+    
     function createPixels() {
         let pixelBoard = document.querySelector('#pixel-board');
         for (let index = 0; index < 25; index += 1) {

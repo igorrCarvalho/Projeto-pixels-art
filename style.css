@@ -7,9 +7,10 @@ body {
 }
 
 #color-palette {
-  margin: 1px solid black;
   width: 400px;
-  margin-left: auto;
+  position: relative;
+  margin-left: 35.5%;
+  margin-bottom: 20px;
 }
 
 .color {
@@ -27,7 +28,7 @@ body {
 }
 
 header {
-  background-color: #0F0332;
+  background-color: #0f0332;
   padding-top: 5px;
   padding-bottom: 5px;
   color: white;
@@ -37,6 +38,7 @@ header {
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   width: 210px;
   height: 210px;
   border: 2px solid black;
@@ -81,9 +83,6 @@ footer {
 }
 
 #color-palette {
-  position: relative;
-  margin-left: 35.5%;
-  margin-bottom: 20px;
 }
 
 #input-section {
