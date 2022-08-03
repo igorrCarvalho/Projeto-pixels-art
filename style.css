@@ -1,33 +1,42 @@
+body {
+  background-image: url('rocket.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 20%;
+  margin: 0;
+}
+
 #color-palette {
   margin: 1px solid black;
+  width: 400px;
+  margin-left: auto;
 }
 
 .color {
   background-color: white;
   padding: 30px;
   border: 1px solid black;
-  width: 50px;
+  width: 25px;
+  height: 25px;
   display: inline-block;
+  border-radius: 100%;
 }
 
 #black {
   background-color: black;
 }
 
-#blue {
-  background-color: blue;
-}
-
-#red {
-  background-color: red;
-}
-
-#purple {
-  background-color: purple;
+header {
+  background-color: #0F0332;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
 }
 
 #pixel-board {
   margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
   width: 210px;
   height: 210px;
   border: 2px solid black;
@@ -53,4 +62,37 @@
 
 .purple {
   background-color: purple;
+}
+
+#header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 81%;
+  width: 100%;
+}
+
+#my-name {
+  color: blueviolet;
+}
+
+#color-palette {
+  position: relative;
+  margin-left: 35.5%;
+  margin-bottom: 20px;
+}
+
+#input-section {
+  position: relative;
+  margin-left: 40.5%;
+}
+
+#clear-board {
+  position: relative;
+  margin-left: 47%;
+  margin-top: 8px;
 }
