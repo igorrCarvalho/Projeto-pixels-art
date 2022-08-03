@@ -49,6 +49,21 @@ window.onload = function() {
         let boardSize = boardNum.value;
         if (boardSize <= 0 || boardSize === undefined || boardSize === null) {
             window.alert('Board Inválido!')
+        } else if (boardSize > 50) {
+            boardSize = 50
+            const pixelContainer = document.querySelector('#pixel-board');
+            let containerWidth = (40 * boardSize) + (boardSize * 2);
+            containerWidth = containerWidth + 'px' 
+            pixelContainer.style.width = containerWidth;
+            pixelContainer.style.height = containerWidth;
+            pixelContainer.innerHTML = ''
+            for (let index = 0; index < boardSize ** 2; index += 1) {
+                let pixel = document.createElement('div');
+                pixel.className = 'pixel';
+                pixelContainer.appendChild(pixel);
+            }
+        } else if (boardSize <= 4) {
+            window.alert('Board incorreto! Deve estar entre 5 e 50')
         } else {
             boardSize = parseInt(boardSize);
             const pixelContainer = document.querySelector('#pixel-board');
@@ -56,7 +71,6 @@ window.onload = function() {
             containerWidth = containerWidth + 'px' 
             pixelContainer.style.width = containerWidth;
             pixelContainer.style.height = containerWidth;
-            console.log(containerWidth)
             pixelContainer.innerHTML = ''
             for (let index = 0; index < boardSize ** 2; index += 1) {
                 let pixel = document.createElement('div');
@@ -64,10 +78,7 @@ window.onload = function() {
                 pixelContainer.appendChild(pixel);
             }
         }
-
     })
-
-    
 }
 
 
