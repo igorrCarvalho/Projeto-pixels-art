@@ -34,6 +34,15 @@ window.onload = function() {
         })
     }
     applyColor();
+
+    const button = document.querySelector('#clear-board');
+    button.addEventListener('click', function() {
+        const allPixels = document.querySelectorAll('.pixel');
+        for (let index = 0; index < allPixels.length; index += 1) {
+            allPixels[index].removeAttribute('id');
+        }
+    })
+    
 }
 
 
