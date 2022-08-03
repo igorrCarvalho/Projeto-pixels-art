@@ -6,22 +6,21 @@ window.onload = function () {
   const divColor2 = document.querySelectorAll('.color')[1];
   const divColor3 = document.querySelectorAll('.color')[2];
   const divColor4 = document.querySelectorAll('.color')[3];
-  
+
   function generateColor() {
-      const letters = '0123456789ABCDEF';
-      let generatedColor = '#';
-      for (let index = 0; index < 6; index += 1) {
-          generatedColor += letters[Math.floor(Math.random() * 16)]
-        }
-        
-        return generatedColor;
+    const letters = '0123456789ABCDEF';
+    let generatedColor = '#';
+    for (let index = 0; index < 6; index += 1) {
+      generatedColor += letters[Math.floor(Math.random() * 16)];
     }
+    
+    return generatedColor;
+  }
 
   divColor2.style.backgroundColor = generateColor();
   divColor3.style.backgroundColor = generateColor();
-  divColor4.style.backgroundColor = generateColor(); 
-    
-    
+  divColor4.style.backgroundColor = generateColor();     
+
     function createPixels() {
         let pixelBoard = document.querySelector('#pixel-board');
         for (let index = 0; index < 25; index += 1) {
