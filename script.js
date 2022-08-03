@@ -42,6 +42,31 @@ window.onload = function() {
             allPixels[index].removeAttribute('id');
         }
     })
+
+    let btn = document.querySelector('#generate-board');
+    btn.addEventListener('click', function () {
+        const boardNum = document.querySelector('#board-size');
+        let boardSize = boardNum.value;
+        if (boardSize <= 0 || boardSize === undefined || boardSize === null) {
+            window.alert('Board Inválido!')
+        } else {
+            boardSize = parseInt(boardSize);
+            const pixelContainer = document.querySelector('#pixel-board');
+            let containerWidth = (40 * boardSize) + (boardSize * 2);
+            containerWidth = containerWidth + 'px' 
+            pixelContainer.style.width = containerWidth;
+            pixelContainer.style.height = containerWidth;
+            console.log(containerWidth)
+            pixelContainer.innerHTML = ''
+            for (let index = 0; index < boardSize ** 2; index += 1) {
+                let pixel = document.createElement('div');
+                pixel.className = 'pixel';
+                pixelContainer.appendChild(pixel);
+            }
+        }
+
+    })
+
     
 }
 
