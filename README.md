@@ -1,6 +1,7 @@
 # Boas-vindas ao repositório do projeto Arte com Pixels!
 
 Aqui você encontrará o código referente ao projeto Pixels Art. Ele foi desenvolvido à partir do TDD `(Test Driven Development)` Tem como objetivo a construção de um quadro de pixels dinâmico com três cores aleatórias e o preto. O projeto conta com um quadro redimensionável, são geradas 3 cores aleatóriamente e é possível pintar o quadro com as cores de sua escolha. Além disso, é possível limpar o quadro.
+![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/64559670/190878600-e0589db6-6a54-436c-9cd3-793be28405a2.gif)
 
 # Desenvolvimento
 
