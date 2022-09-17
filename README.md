@@ -23,11 +23,11 @@ Esse projeto foi desenvolvido por [Igor Carvalho](https://www.linkedin.com/in/ig
 <details>
   <summary><strong>Como copiar o projeto pra sua máquina</strong></summary><br />
     Primeiramente clone o repositório <br />
-    - `git clone * chave SSH *`<br />
+    * git clone * chave ssh *<br />
   Depois entre na pasta clonada<br />
-    - `cd * nome da pasta *`<br />
+    * cd * nome da pasta *<br />
   e por último instale as dependências do projeto pelo terminal<br />
-    - `npm install`
+    * npm install
 
 </details>
 
@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido por [Igor Carvalho](https://www.linkedin.com/in/ig
   <summary><strong>Como testar para saber se tudo está funcionando</strong></summary><br />
   É possível realizar testes para ter certeza de que todas as features do site estão funcionando corretamente. Todos os testes são de autoria da Trybe. <br />
   Para rodar os testes basta digitar no terminal:<br />
-  - npm run cypress:open<br />
+  *npm run cypress:open<br />
 Uma tela irá se abrir, basta selecionar a opção dos testes e novamente outra tela irá se abrir com os testes.
   
 </details>
