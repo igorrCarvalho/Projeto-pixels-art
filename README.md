@@ -1,6 +1,6 @@
 # Boas-vindas ao repositório do projeto Arte com Pixels!
 
-Aqui você encontrará o código referente ao projeto Pixels Art. Tem como objetivo a construção de um quadro de pixels dinâmico com três cores aleatórias e o preto. O projeto conta com um quadro redimensionável, são geradas 3 cores aleatóriamente e é possível pintar o quadro com as cores de sua escolha. Além disso, é possível limpar o quadro.
+Aqui você encontrará o código referente ao projeto Pixels Art. Ele foi desenvolvido à partir do TDD `(Test Driven Development)` Tem como objetivo a construção de um quadro de pixels dinâmico com três cores aleatórias e o preto. O projeto conta com um quadro redimensionável, são geradas 3 cores aleatóriamente e é possível pintar o quadro com as cores de sua escolha. Além disso, é possível limpar o quadro.
 
 # Desenvolvimento
 
@@ -16,7 +16,6 @@ Esse projeto foi desenvolvido por [Igor Carvalho](https://www.linkedin.com/in/ig
   - JavaScript
   - JavaScript DOM e Eventos
   - CSS Flexbox
-  - EsLint
 
 </details>
 
@@ -28,4 +27,14 @@ Esse projeto foi desenvolvido por [Igor Carvalho](https://www.linkedin.com/in/ig
     - `cd * nome da pasta *`<br />
   e por último instale as dependências do projeto pelo terminal<br />
     - `npm install`
+
+</details>
+
+<details>
+  <summary><strong>Como testar para saber se tudo está funcionando</strong></summary><br />
+  É possível realizar testes para ter certeza de que todas as features do site estão funcionando corretamente. Todos os testes são de autoria da Trybe. <br />
+  Para rodar os testes basta digitar no terminal:<br />
+  - npm run cypress:open<br />
+Uma tela irá se abrir, basta selecionar a opção dos testes e novamente outra tela irá se abrir com os testes.
+  
 </details>
