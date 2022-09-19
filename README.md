@@ -1,6 +1,6 @@
 # Welcome to the project Pixels Art repositorie! 👋
 
-This project was made using the TDD `(Test Driven Development)` and creates a dinamic pixel board with three random colors and black. It has an choosable board size from 5x5 to a 50x50 limit. Three random colors are generated and the board can be painted with the choosed color. And, it`s possible to clean the board.
+This project was made using the TDD `(Test Driven Development)` and creates a dinamic pixel board with three random colors and black. It has an choosable board size from 5x5 to a 50x50 limit. Three random colors are generated and the board can be painted with the choosed color. And, it`s possible to clean the board.<br />
 ![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/64559670/190878600-e0589db6-6a54-436c-9cd3-793be28405a2.gif)
 
 # Development
